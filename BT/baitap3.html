@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 3</title>
+</head>
+<body>
+<script>
+    let vatli;
+    let hoa;
+    let sinh;
+    vatli = prompt("nhap vat li");
+    hoa = prompt("nhap hoa");
+    sinh = prompt("nhap sinh");
+    let diemvatli = parseFloat(vatli);
+    let diemhoa = parseFloat(hoa);
+    let diemsinh = parseFloat(sinh);
+    let tb = (diemvatli + diemhoa + diemsinh) / 3
+    document.write("Diem trung binh la" + tb + "<br>");
+    let tong = diemvatli + diemhoa + diemsinh
+    document.write("tong la" + tong)
+</script>
+</body>
+</html>
