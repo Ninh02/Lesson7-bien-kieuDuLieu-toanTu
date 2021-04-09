@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="number"/></td>
+        <td><select id="from">
+            <option value="23000">vnd</option>
+            <option value="1">usd</option>
+        </select></td>
+        <td><select id="to">
+            <option value="23000">vnd</option>
+            <option value="1">usd</option>
+        </select></td>
+        <td>
+            <button onclick="convert()">convert</button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function convert() {
+        let number = document.getElementById("number").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result = number * to / from;
+        document.getElementById('result').innerText = "Result : " + result;
+    }
+</script>
+</body>
+</html>
